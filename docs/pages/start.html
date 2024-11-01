@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>YouQuiz</title>
+</head>
+<body class="bg-[#325b5f]  flex items-center justify-center py-[30px]">
+  <div>
+      <button onclick="start()"  class="px-[20px] next py-1 bg-[#3be191] rounded-[18px] text-white"><a href="./index.html">Start</a></button>
+      <div class="addQuestion w-[50%] absolute top-[12%] px-[50px] py-[30px] right-[25%] bg-white rounded-md ">
+          <h2>Add other questions</h2>
+            <form class="flex flex-col">
+              <label for="q">Enter a question</label>
+              <input id="q" type="text" placeholder="exemple: What is 5 x 5">
+              <label for="1" >enter the option A</label>
+              <input id="1" type="text" placeholder="exemple: A. 20">
+              <label for="2">Enter the option B</label>
+              <input id="2" type="text" placeholder="exemple: B. 15">
+              <label for="3">Enter the option C</label>
+              <input id="3" type="text" placeholder="exemple: C. 50">
+              <label for="4">Enter the option D</label>
+              <input id="4" type="text" placeholder="exemple: D. 20">
+              <label for="4">the right answer</label>
+              <input id="4" type="text" placeholder="exemple: a">
+              <button onclick="submitForm(event)" class="px-[20px] py-1 bg-[#3be191]  rounded-[18px] text-white mt-4 ">Add</button>
+            </form>
+  </div>
+
+
+    
+
+
+    <script src="../script.js"></script>
+</body>
+</html>
